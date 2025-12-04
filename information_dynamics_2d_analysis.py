@@ -118,9 +118,15 @@ def run_2d_analysis():
 
     plt.suptitle('Information-Driven Symmetry Breaking in 2D', fontsize=16)
     plt.tight_layout()
-    plt.savefig('information_dynamics_2d_dashboard.png')
-    print("Analysis complete. Saved to 'information_dynamics_2d_dashboard.png'.")
+    
+    # Save the plot with the correct filename
+    plt.savefig('information_dynamics_2d_analysis.png')
+    print("Analysis complete. Saved to 'information_dynamics_2d_analysis.png'.")
+    
+    # Display the plot window
+    plt.show()
 
 if __name__ == "__main__":
     run_2d_analysis()
+    # This line holds the script open until the user presses Enter
     input("Press Enter to exit...")
